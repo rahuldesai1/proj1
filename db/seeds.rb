@@ -12,6 +12,7 @@
     name: name,
     level: rand(1..20),
     ndex: ndex,
+    health: 100,
   )
 end
 
@@ -19,3 +20,6 @@ end
 %w(Ash Gary Misty Brock).each do |name|
   Trainer.create name: name, email: name+"@pokeportal.com", password: 'password'
 end
+
+
+#, as: 'create_poke'
